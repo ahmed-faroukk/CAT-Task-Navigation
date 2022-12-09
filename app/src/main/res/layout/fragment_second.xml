@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SecondFragment">
+
+
+    <TextView
+        android:id="@+id/Second_Name_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you Must Enter Your name"
+        android:padding="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Second_ToThird"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:background="@drawable/ic_background"
+        android:text="navigate to Third fragment"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Second_ToFirst"
+        app:layout_constraintTop_toBottomOf="@+id/Second_Name_Tv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Second_ToFirst"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:background="@drawable/ic_background"
+        android:text="navigate back to First fragment"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Second_ToThird"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Second_Name_Tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
